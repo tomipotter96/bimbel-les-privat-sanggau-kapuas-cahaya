@@ -38,8 +38,8 @@
 <body>
 
 <header>
-  <img src="logo.png" alt="Logo Bimbel Cahaya" class="logo">
-  <h1>Bimbingan Belajar Pribadi "Cahaya" </h1>
+  <img src="images/logo.png" alt="Logo Bimbel Cahaya" class="logo">
+  <h1>Bimbingan Belajar Pribadi "Cahaya"</h1>
   <p>Penyedia Les Privat khusus area Kecamatan Kapuas, Kabupaten Sanggau, Kalimantan Barat</p>
   <p>Guru bisa datang ke rumah siswa/i untuk membantu siswa/i SD/MI, SMP/MTs, SMA sederajat meraih prestasi terbaik! Guru berpengalaman sejak 2014.</p>
 </header>
@@ -54,8 +54,8 @@
 <section id="home">
   <h2>Selamat Datang</h2>
   <div class="poster-gallery">
-    <img src="poster1.png" alt="Poster Bimbel 1" onclick="openLightbox(this.src)">
-    <img src="poster2.jpg" alt="Poster Bimbel 2" onclick="openLightbox(this.src)">
+    <img src="images/poster1.png" alt="Poster Bimbel 1" onclick="openLightbox(this.src)">
+    <img src="images/poster2.jpg" alt="Poster Bimbel 2" onclick="openLightbox(this.src)">
   </div>
 </section>
 
@@ -63,22 +63,22 @@
   <h2>Program Kami</h2>
   <div class="program">
     <div class="card">
-      <img src="math.png" alt="Ilustrasi Matematika">
+      <img src="images/math.png" alt="Ilustrasi Matematika">
       <h3>Matematika</h3>
-      <p>Belajar konsep dasar hingga tingkat lanjut hingga siswa/i paham dan bisa.</p>
+      <p>Belajar konsep dasar hingga tingkat lanjut sampai siswa/i menguasai.</p>
     </div>
     <div class="card">
-      <img src="english.png" alt="Ilustrasi Bahasa Inggris">
+      <img src="images/english.png" alt="Ilustrasi Bahasa Inggris">
       <h3>Bahasa Inggris SD-SMP</h3>
       <p>Latihan grammar dan vocabulary.</p>
     </div>
     <div class="card">
-      <img src="physics.png" alt="Ilustrasi IPA & Fisika">
+      <img src="images/physics.png" alt="Ilustrasi IPA & Fisika">
       <h3>IPA & Fisika</h3>
       <p>Membahas konsep sains dengan menggunakan teknologi.</p>
     </div>
     <div class="card">
-      <img src="computer.png" alt="Ilustrasi Komputer & TIK">
+      <img src="images/computer.png" alt="Ilustrasi Komputer & TIK">
       <h3>Komputer & TIK</h3>
       <p>Belajar Ms. Word, Excel, PowerPoint, hingga konsep dasar TIK.</p>
     </div>
@@ -88,18 +88,12 @@
 <!-- Peta Google Maps -->
 <div class="map-container">
   <h2>Lokasi Kantor Kami</h2>
-  <iframe src="https://www.google.com/maps?q=0.1552258618266475,110.59222532791911&hl=es;z=14&output=embed"></iframe>
+  <iframe src="https://www.google.com/maps?q=0.1552258618266475,110.59222532791911&hl=id&z=15&output=embed"></iframe>
 </div>
 
 <section id="contact">
   <h2>Kontak Kami</h2>
   <p style="text-align:center;">Hubungi kami untuk informasi lebih lanjut:</p>
-  <form>
-    <input type="text" placeholder="Nama Anda" required>
-    <input type="email" placeholder="Email Anda" required>
-    <textarea placeholder="Pesan Anda" rows="5" required></textarea>
-    <button type="submit">Kirim</button>
-  </form>
 
   <!-- Chat Langsung via WhatsApp -->
   <div class="chat-box">
@@ -137,4 +131,8 @@
     event.preventDefault();
     var name = document.getElementById('chatName').value;
     var message = document.getElementById('chatMessage').value;
-    var phone = "628
+    var phone = "6289694210759"; // nomor WA format internasional
+    var text = "Halo, saya " + name + ". Pesan: " + message;
+
+    // Deteksi perangkat
+    var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent
